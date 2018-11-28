@@ -2,6 +2,7 @@
   <div>
     <mt-header fixed title="vue项目 "></mt-header>
 
+    <h1>hello</h1>
     <nav class="mui-bar mui-bar-tab">
       <a class="mui-tab-item mui-active" href="#tabbar">
         <span class="mui-icon mui-icon-home"></span>
