@@ -4,6 +4,10 @@ import HomeContainer from './components/tabbar/HomeContainer.vue';
 import MemberContainer from './components/tabbar/MemberContainer.vue';
 import SearchContainer from './components/tabbar/SearchContainer.vue';
 import ShopcarContainer from './components/tabbar/ShopcarContainer.vue';
+import NewsList from './components/news/NewsList.vue';
+import NewsInfo from './components/news/NewsInfo.vue';
+import GoodsList from './components/goods/goodsList.vue';
+import GoodsInfo from './components/goods/goodsInfo.vue';
 
 // 3. 创建路由对象
 var router = new VueRouter({
@@ -27,6 +31,23 @@ var router = new VueRouter({
       path: '/shopcar',
       component: ShopcarContainer
     },
+    {
+      path: '/home/newslist',
+      component: NewsList
+    },
+    {
+      path: '/home/newsInfo/:id',
+      component: NewsInfo
+    },
+    {
+      path: '/home/goodsList',
+      component: GoodsList
+    },
+    {
+      name: "goodsInfo",
+      path: '/home/goodsInfo/:id',
+      component: GoodsInfo
+    }
   ],
   linkActiveClass: "mui-active",
   //默认的linkActiveClass是router-link-active
